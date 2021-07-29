@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'zero';
+    src: url(./assets/fonts/ZeroSANS_DEMO.ttf);
+}
+@font-face {
+    font-family: 'exp';
+    src: url(./assets/fonts/ExperimentalBm-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'impossible';
+    src: url(./assets/fonts/Imposible_outline.ttf);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    scroll-behavior: smooth;
+    color: white;
+    font-family: 'zero';
+}
+
+body {
+    height: 100vh;
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+
+.ui {
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar a{
+    padding: 0rem .5rem;
+    text-decoration: none;
+    color: #808080;
+}
+.navbar {
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+}
+
+.brandname span{
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+}
+.brandname {
+    display:flex;
+    position:absolute;
+    justify-content: flex-end;
+    top:3%;
+}
+
+.logo span{
+    padding:0 .7rem;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    font-family: 'zero';
+    font-weight: 300;
+}
+
+.author {
+    display: inline-block;
+    position: absolute;
+    justify-content: center;
+    right: 1.4%;
+    bottom:17.5%;
+    font-family: 'zero';
+    font-size: 2rem;
+    color:white;
+    letter-spacing: .3rem;
+    padding:0 .9rem;
+    border: 3px solid #ffffff;
+    opacity:0;
+}
+
+.last-name {
+    font-style: italic;
+}
+
+.callToAct {
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:absolute;
+    font-family: 'zero';
+    right:1.3%;
+    bottom:7.5%;
+}
+
+.actContainer {
+    display:grid;
+    padding: 0rem 0rem 0rem 1.5rem;
+}
+
+.scrollIcon{
+    height:4.3rem;
+    width:4.3rem;
+    opacity:.1;
+}
+
+#act1 {
+ font-size: 2rem;
+ letter-spacing: .35rem;
+}
+
+#act2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: .6rem;
+}
+
+.work {
+    height: 100vh;
+    width:100vw;
+    background-size: cover;
+    display:flex;
+    position: absolute;
+    top:10%
+}
+
+.hero-welcome {
+    display:flex;
+    position: absolute;
+    top:7%
+}
+
+.hero-msg {
+    margin: 0;
+    padding:0;
+    width: 100vw;
+    display: inline;
+    position: absolute;
+    color:rgb(252, 252, 252);
+    bottom:5%;
+    left:1%;
+    opacity: 0;
+    font-size: 11rem;
+    font-weight:100;
+    font-family: 'zero';
+    letter-spacing: .5rem;
+}
+
+.grid {
+    height: 100vh;
+    width:100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 9rem 9rem 9rem 9rem 9rem 9rem 9rem 9rem 9rem 9rem 9rem;
+    grid-template-rows: 9rem 9rem 9rem 9rem ;
+    grid-gap:0;
+}
+
+.grid-cross {
+    height:8rem;
+    width:10rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0;
+    margin:0;
+    color:rgb(255, 255, 255);
+    font-size: 13rem;
+    font-weight:lighter;
+    opacity: 0;
+    
+}
+
+.grid div:hover {
+    cursor: default;
+}
+
+#svg1 {
+ display:inline-block;
+ position: relative;
+ top: 15%;
+}
+ 
+#svg2 {
+    display:inline-block;
+    position:relative;
+    right:-82%;
+    top:-2.5%;
+}
+
+.toggle-mode {
+    display:flex;
+    position:relative;
+    color:white;
+    font-family:'exp';
+    font-size: 14rem;
+    top:-101.7%;
+    right:-82.45%;
+    background: #000000;
+    padding: .33rem 1rem;
+    z-index: 100;
+}
+
+.spinner {
+    max-height:6rem;
+    max-width:6rem;
+    align-items: center;
+    justify-content: center;
+    padding:0rem .6rem;
+}
+
+
+.gallery {
+    width: 600%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: no-wrap;
+    position: absolute;
+}
+
+.panel {
+    opacity: 1;
+    width:100%;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    border-top: 3px solid white;
+    position:absolute;
+}
+
+.card-title {
+    display:flex;
+    position:absolute;
+    left:16%;
+    top:-21.6%
+}
+.card-title h1{
+    font-family: 'impossible';
+    font-size: 8.5rem;
+    font-weight: 100;
+    letter-spacing: .5rem;
+}
+
+.card-descr {
+    display: flex;
+    position:absolute;
+    height:75vh;
+    width:10%;
+    top: 15%;
+    left:56%;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+.card-descr p {
+    font-size: 1.5rem;
+}
+.card-media {
+    position:relative;
+    top:30%;
+    left: 13%;
+    z-index: 99;
+}
+
+h2 {
+    opacity: .5;
+    font-weight: 100;
+}
